@@ -1,0 +1,311 @@
+/*import for bootstrap */
+@import url(https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css);
+/* import for bootstrap icons */
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css');
+
+/* css for index starts here */
+.mainTopSection {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+}
+
+.mainEyeCatcher > img {
+	width: 90%;
+	margin-right: 50px;
+	border-radius: 1%;
+}
+
+.rightNextToEyeCatcher > div > img {
+	width: 90%;
+	border-radius: 1%;
+}
+.logo {
+	width: 50px;
+	height: 50px;
+}
+.highlightsSections {
+	margin-top: 50px;
+	padding-top: 25px;
+	display: flex;
+	justify-content: space-around;
+	background-color: #e61610;
+}
+.highlightsSections > div > p {
+	color: #fff;
+}
+.highlightsDiv > img {
+	width: 275px;
+	height: 150px;
+}
+
+.navBar > div {
+	background-color: #e61610;
+	display: flex;
+	justify-content: space-between;
+}
+
+.navBar > div > img {
+	height: 50px;
+	width: 50px;
+	margin: 10px 0px 10px 10px;
+}
+
+.navLinks {
+	display: flex;
+	text-align: end;
+}
+.navBar > div > a,
+.navLinks > a {
+	text-decoration: none;
+	color: #428bca;
+	background-color: #fff;
+	border-radius: 5%;
+	padding: 15px 20px;
+	align-self: center;
+	margin: 5px 10px 5px 10px;
+}
+
+.navBar > div > a {
+	margin-right: 20px;
+}
+.active {
+	background-color: #428bca !important;
+	color: #fff !important;
+	/* added important because of the order css reads the styles and works */
+}
+
+.hamburger,
+.close,
+.noDisplay {
+	display: none !important;
+}
+
+/* this controlls the copyright collor together with the background  */
+.footer,
+.nav-link {
+	background-color: #e61610;
+	color: #fff;
+	text-decoration: none;
+}
+
+/* underconstruction page*/
+.underconstructionDiv {
+	display: grid;
+	grid-column-start: 2;
+	justify-items: center;
+	background-color: #e61610;
+	color: #fff;
+	padding-bottom: 50px;
+}
+.borderUnderconstruction {
+	display: grid;
+	grid-template-columns: 20% 60% 20%;
+}
+
+/* index CSS ends */
+/* navbar CSS starts*/
+/*adding a margin on the bottom so the h1 is not stuck to the header*/
+.NavBar {
+	margin-bottom: 25px;
+}
+@media (max-width: 850px) {
+	.hamburger {
+		position: fixed;
+		/* a large z-index puts the ham button above the rest of the page*/
+		z-index: 99;
+		background: white;
+		border: none;
+		cursor: pointer;
+		top: 1rem;
+		right: 1rem;
+	}
+
+	.menu {
+		position: fixed;
+		/* give the menu a larger z-index than the ham link
+		to put the menu above it */
+		z-index: 100;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 100%;
+		height: 100vh;
+		/* basic menu styling*/
+		list-style: none;
+		background: black;
+		display: flex;
+
+		flex-direction: column;
+		/* animate slide up/down */
+		transform: translateY(-100%);
+		transition: transform 0.2s ease;
+	}
+
+	.close {
+		position: absolute;
+		border: none;
+		color: white;
+		cursor: pointer;
+		top: 1rem;
+		right: 1rem;
+	}
+
+	@media (min-width: 851px) {
+		.NavBar {
+			background-color: #e61610;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.NavBar > div > img {
+			height: 50px;
+			width: 50px;
+			margin: 10px 0px 10px 10px;
+		}
+
+		.NavLinks {
+			display: flex;
+			text-align: end;
+		}
+		.NavBar > div > a,
+		.NavLinks > a {
+			text-decoration: none;
+			color: #428bca;
+			background-color: #fff;
+			padding: 15px 20px;
+			align-self: center;
+			margin: 5px 10px 5px 10px;
+		}
+
+		.NavBar > div > a {
+			margin-right: 20px;
+		}
+		.active {
+			background-color: #428bca !important;
+			color: #fff !important;
+			/* added important because of the order css reads the styles and works */
+		}
+	}
+}
+
+/* navbar CSS ends */
+/* login CSS starts */
+.loginCard {
+	background-color: #e61610;
+}
+.loginLogo {
+	height: 150px;
+	margin: 30px 0px;
+}
+
+/* login CSS stops */
+/* store CSS starts */
+.storeBannerDiv {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	margin: 30px 25px 0px 50px;
+}
+.storeMainBannerDiv {
+	background-image: url(../media/storeMedia/cristmasBGajax.jpeg);
+	color: #ffff;
+	padding: 25px;
+	margin-right: 25px;
+}
+.StoreRightBannersDiv > div {
+	margin-bottom: 25px;
+}
+.storeMainBannerDiv > p {
+	margin-bottom: 450px;
+}
+
+.storeMainBannerDiv > button {
+	background-color: #ffff;
+	color: #000;
+	font: bold;
+}
+
+.storeButtonCart {
+	background-color: #e61610;
+	color: #ffff;
+}
+.storeProductCard {
+	border: 1px solid #000;
+	display: grid;
+	justify-content: center;
+	justify-items: center;
+	margin: 15px 15px;
+	padding: 20px;
+}
+
+.storeProductCard > img {
+	height: 150px;
+}
+
+.storeProductsOnSale {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	margin: 50px 15px;
+}
+
+.storeOnSale {
+	color: #e61610;
+}
+.storeSupperSale {
+	color: #e61610;
+}
+
+/* store CSS stops */
+/* teams CSS starts */
+.teamsHeaderh1 {
+	display: flex;
+	justify-content: center;
+	margin: 25px 0px;
+}
+.teamsAjaxDiv {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.teamsAjaxDiv > div {
+	margin: 0px 0px 25px 50px;
+}
+.teamsImg {
+	width: 600px;
+	aspect-ratio: 16/9;
+}
+/* teams CSS stops */
+/* tickets CSS starts */
+.ticketsH1 {
+	display: flex;
+	justify-content: center;
+	margin: 20px 0px;
+}
+.ticketCardDiv {
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	border: 1px solid black;
+	margin-bottom: 50px;
+}
+.ticketMiddleDiv > p {
+	margin-bottom: 0px;
+	margin-top: 15px;
+}
+
+.ticketShowDetails {
+	margin-top: 25px;
+}
+.ticketButtonBuy {
+	display: grid;
+	align-content: space-evenly;
+	margin-top: 50px;
+}
+.ticketButtonBuy > button,
+.ticketMiddleDiv > button {
+	background-color: #e61610;
+	color: #fff;
+}
+.ticketsImg {
+	width: 292px;
+	height: 172px;
+}
+/* tickets CSS stops */

@@ -4,31 +4,83 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
-		<link rel="stylesheet" href="../CSS/Styles.css" />
+		<link rel="stylesheet" href="../styles.css" />
 	</head>
-	<header>
+		
+	<body>
 		<!-- this is a nav item all chanches made need to be replicated on the other pages. -->
-		<nav class="NavBar">
+		<nav class="navBar">
 			<div class="menu" id="menu">
-				<img src="../media//AJAX.svg" alt="Logo Ajax" />
-				<div class="NavLinks">
+				<img src="../media/AJAX.svg" alt="Logo Ajax" />
+				<div class="navLinks">
 					<a href="../index.html">Home</a>
-					<a href="./Store.html">Fan Store</a>
-					<a href="./Teams.html">Teams</a>
-					<a class="active" href="./Tickets.html">Tickets</a>
+					<a href="./store.html">Fan Store</a>
+					<a href="./teams.html">Teams</a>
+					<a class="active" href="./tickets.html">Tickets</a>
 				</div>
-				<a class="NavLogin" href="./Login.html">Login</a>
+				<a class="navLogin" href="./login.html">Login</a>
 				<a class="hamburger" href="#menu">
 					<span class="material-icons noDisplay"> close </span>
 				</a>
 			</div>
 			<span class="material-icons noDisplay"> menu </span>
 		</nav>
-	</header>
-	<body>
-		<h1>up coming game tickets</h1>
-	</body>
-	<!-- This Footer is made with bootstrap -->
+		<h1 class="ticketsH1">Next Games</h1>
+		<div>
+			<div class="ticketCardDiv">
+				<div>
+				<img src="../media/upcoming Games/ajax-volendam.jpeg" alt="ticket ajax volendam">
+			</div>
+			<div class="ticketMiddleDiv">
+				<h2> Ajax - FC volendam</h2>
+				<button>Log in to see details and availabilaty</button>
+				<p>Nov 2, 2023, 8:00pm <br/>
+				Johan Cruijff Arena</p>
+			
+				 <p class="ticketShowDetails"> &gt; show details</p>
+			</div>
+			<div class="ticketButtonBuy">
+				<button>book visit ajax package</button>
+				<button>buy parking ticket</button>
+			</div>
+			</div>
+			<div class="ticketCardDiv">
+				<div>
+				<img class="ticketsImg" src="../media/upcoming Games/ajax-twente.jpeg" alt="ticket ajax twente">
+			</div>
+			<div class="ticketMiddleDiv">
+				<h2> FC Twente - Ajax </h2>
+				<button>Log in to see details and availabilaty</button>
+				<p>Nov 9, 2023, 8:30pm <br/> Grolsch Veste</p>
+			
+				 <p class="ticketShowDetails"> &gt; show details</p>
+			</div>
+			<div class="ticketButtonBuy">
+				<button>book visit ajax package</button>
+				<button>buy parking ticket</button>
+			</div>
+			</div>
+			<div class="ticketCardDiv">
+				<div>
+				<img src="../media/upcoming Games/ajax-brighton.jpeg" alt="ticket ajax volendam">
+			</div>
+			<div class="ticketMiddleDiv">
+				<h2> Ajax - Brighton & Hove Albion FC</h2>
+				<button>Log in to see details and availabilaty</button>
+				<p>Nov 15, 2023, 8:30pm <br/>
+				Johan Cruijff Arena</p>
+			
+				 <p class="ticketShowDetails"> &gt; show details</p>
+			</div>
+			<div class="ticketButtonBuy">
+				<button>book visit ajax package</button>
+				<button>buy parking ticket</button>
+			</div>
+			</div>
+		</div>
+
+
+		<!-- This Footer is made with bootstrap changes made here need to be replicated on other pages-->
 	<footer class="py-3 my-4 footer">
 		<ul class="nav justify-content-center border-bottom pb-3 mb-3">
 			<li class="nav-item">
@@ -49,4 +101,6 @@
 		</ul>
 		<p class="text-center text-body-secondary">© 2023 Ajax, Inc</p>
 	</footer>
+	</body>
+
 </html>

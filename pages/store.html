@@ -3,54 +3,82 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="../CSS/Styles.css" />
+		<link rel="stylesheet" href="../styles.css" />
+		
 		
 		<title>Document</title>
 	</head>
 	<!-- this is a nav item all chanches made need to be replicated on the other pages. -->
-	<nav class="NavBar">
-		<div class="menu" id="menu">
-			<img src="../media//AJAX.svg" alt="Logo Ajax" />
-			<div class="NavLinks">
-				<a href="../index.html">Home</a>
-				<a class=" active" href="./Store.html">Fan Store</a>
-				<a href="./Teams.html">Teams</a>
-				<a  href="./Tickets.html">Tickets</a>
-			</div>
-			<a class="NavLogin" href="./Login.html">Login</a>
-			<a class="hamburger" href="#menu">
-				<span class="material-icons noDisplay"> close </span>
-			</a>
-		</div>
-		<span class="material-icons noDisplay"> menu </span>
-	</nav>
+	
 	<body>
-		<div>
-			<img src="" alt="" />
-			<div>
-				<img src="" alt="" />
-				<img src="" alt="" />
+		<nav class="navBar">
+			<div class="menu" id="menu">
+				<img src="../media/AJAX.svg" alt="Logo Ajax" />
+				<div class="navLinks">
+					<a href="../index.html">Home</a>
+					<a class=" active" href="./store.html">Fan Store</a>
+					<a href="./teams.html">Teams</a>
+					<a  href="./tickets.html">Tickets</a>
+				</div>
+				<a class="navLogin" href="./login.html">Login</a>
+				<a class="hamburger" href="#menu">
+					<span class="material-icons noDisplay"> close </span>
+				</a>
 			</div>
-			<div>
-				<p>Sale</p>
-				<div>
-					<img src="" alt="" />
-					<p></p>
-					<p></p>
+			<span class="material-icons noDisplay"> menu </span>
+		</nav>
+		<div>
+			<div class="storeBannerDiv">
+			<div class="storeMainBannerDiv">
+			
+					<h1>Temporarily free shipping from €25</h1>
+					<p>Find your AJAX Christmas gift</p>
+					<button>View all gifts</button>
+				
+			</div>
+			<div class="StoreRightBannersDiv">
+				<div class="storeProductCard">
+					<img src="../media/storeMedia/71X21lpVLkL._AC_UY580_.jpg" alt="backpack" />
+					<p >From €99,99</p>
+					<p class="storeOnSale">NOW €29,99</p>
+					<button class="storeButtonCart">Add to cart  <i class="bi bi-cart-fill"></i> </button>
 				</div>
-				<div>
-					<img src="" alt="" />
-					<p></p>
-					<p></p>
+				<div class="storeProductCard">
+					<img src="../media/storeMedia/ajax-voetbal-vlakkenkopie.jpg" alt="ajax ball" />
+					<p >From €19,99</p>
+					<p class="storeOnSale">NOW €5,99</p>
+					<button class="storeButtonCart">Add to cart  <i class="bi bi-cart-fill"></i> </button>
 				</div>
-				<div>
-					<img src="" alt="" />
-					<p></p>
-					<p></p>
+			</div>
+		</div>
+		
+			<div class="storeProductsOnSale">
+				<div class="storeProductCard">
+					<img src="../media/storeMedia/57104_toilettas-ajax-uit-2020-2021_1.jpg" alt="ToiletBag" />
+					<p >From €50</p>
+					<p class="storeOnSale">NOW €25</p>
+					<button class="storeButtonCart">Add to cart  <i class="bi bi-cart-fill"></i> </button>
+				</div>
+				<div class="storeProductCard" >
+					<img src="../media/storeMedia/adidas-ajax-away-kit-23-24.jpeg" alt="away shirt 23/24" />
+					<p>From €99,99 </p>
+					<p class="storeOnSale">to €59,99</p>
+					<button class="storeButtonCart">Add to cart  <i class="bi bi-cart-fill"></i> </button>
+				</div>
+				<div class="storeProductCard">
+					<img src="../media/storeMedia/eeff101d-2d41-485b-b4d0-5c10e917e90e.jpeg" alt="home shirt 23/24" />
+					<p>From €109,99 </p>
+					<p class="storeOnSale">to €69,99</p>
+					<button class="storeButtonCart">Add to cart  <i class="bi bi-cart-fill"></i> </button>
+				</div>
+				<div class="storeProductCard">
+					<img src="../media/storeMedia/3littlebirdsTshirt.png" alt="3th shirt 3 little birds" />
+					<p>From €99,99 </p>
+					<p class="storeOnSale">to €59,99</p>
+					<button class="storeButtonCart">Add to cart  <i class="bi bi-cart-fill"></i> </button>
 				</div>
 		</div>
-	</body>
-	<!-- This Footer is made with bootstrap -->
+		<!-- This Footer is made with bootstrap changes made here need to be replicated on other pages-->
 	<footer class="py-3 my-4 footer">
 		<ul class="nav justify-content-center border-bottom pb-3 mb-3">
 			<li class="nav-item">
@@ -71,5 +99,7 @@
 		</ul>
 		<p class="text-center text-body-secondary">© 2023 Ajax, Inc</p>
 	</footer>
+	</body>
+
 
 </html>

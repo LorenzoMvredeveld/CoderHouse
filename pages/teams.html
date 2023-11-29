@@ -4,63 +4,67 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
-		<link rel="stylesheet" href="../CSS/Styles.css" />
+		<link rel="stylesheet" href="../styles.css" />
 	</head>
 	<!-- this is a nav item all chanches made need to be replicated on the other pages. -->
-	<nav class="NavBar">
-		<div class="menu" id="menu">
-			<img src="../media/AJAX.svg" alt="Logo Ajax" />
-			<div class="NavLinks">
-				<a href="../index.html">Home</a>
-				<a href="./Store.html">Fan Store</a>
-				<a class="active" href="./Teams.html">Teams</a>
-				<a href="./Tickets.html">Tickets</a>
-			</div>
-			<a class="NavLogin" href="./Login.html">Login</a>
-			<a class="hamburger" href="#menu">
-				<span class="material-icons noDisplay"> close </span>
-			</a>
-		</div>
-		<span class="material-icons noDisplay"> menu </span>
-	</nav>
+	
 	<body>
-		<h1>Ajax Teams</h1>
+		<nav class="navBar">
+			<div class="menu" id="menu">
+				<img src="../media/AJAX.svg" alt="Logo Ajax" />
+				<div class="navLinks">
+					<a href="../index.html">Home</a>
+					<a href="./store.html">Fan Store</a>
+					<a class="active" href="./teams.html">Teams</a>
+					<a href="./tickets.html">Tickets</a>
+				</div>
+				<a class="navLogin" href="./login.html">Login</a>
+				<a class="hamburger" href="#menu">
+					<span class="material-icons noDisplay"> close </span>
+				</a>
+			</div>
+			<span class="material-icons noDisplay"> menu </span>
+		</nav>
+		<h1 class="teamsHeaderh1">The proud squads of AJAX</h1>
+		<div class="teamsAjaxDiv">
 		<div>
-			<h3></h3>
-			<img src="" alt="" />
+			<h3>Ajax Mens 1</h3>
+			<img class="teamsImg" src="../media/ajax-1.jpeg" alt="squad picture first team mens" />
 		</div>
 		<div>
-			<h3></h3>
-			<img src="" alt="" />
+			<h3>Ajax Women 1</h3>
+			<img class="teamsImg" src="../media/teamfoto-ajax-vrouwen.jpeg" alt="squad picture first team womens" />
 		</div>
 		<div>
-			<h3></h3>
-			<img src="" alt="" />
+			<h3>Ajax under 18 </h3>
+			<img class="teamsImg" src="../media/jong-ajax-2023-2024.jpeg" alt="squad picture under 18 squad" />
 		</div>
 		<div>
-			<h3></h3>
-			<img src="" alt="" />
+			<h3>Ajax E-Sport</h3>
+			<img class="teamsImg" src="../media/Esports-ajax-team.jpeg" alt="E-sport Team Ajax " />
 		</div>
+	</div>
+		<footer class="py-3 my-4 footer">
+			<ul class="nav justify-content-center border-bottom pb-3 mb-3">
+				<li class="nav-item">
+					<a href="../index.html" class="nav-link px-2 text-body-secondary">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link px-2 text-body-secondary" href="./Store.html">Fan Store</a>
+				</li>
+				<li class="nav-item">
+					<a href="./Teams.html" class="nav-link px-2 text-body-secondary">Teams</a>
+				</li>
+				<li class="nav-item">
+					<a  href="./Tickets.html" class="nav-link px-2 text-body-secondary">Tickets</a>
+				</li>
+				<li class="nav-item">
+					<a class= nav-link px-2 text-body-secondary" href="./Login.html">Login</a>
+				</li>
+			</ul>
+			<p class="text-center text-body-secondary">© 2023 Ajax, Inc</p>
+		</footer>
 	</body>
-	<!-- This Footer is made with bootstrap -->
-	<footer class="py-3 my-4 footer">
-		<ul class="nav justify-content-center border-bottom pb-3 mb-3">
-			<li class="nav-item">
-				<a href="../index.html" class="nav-link px-2 text-body-secondary">Home</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link px-2 text-body-secondary" href="./Store.html">Fan Store</a>
-			</li>
-			<li class="nav-item">
-				<a href="./Teams.html" class="nav-link px-2 text-body-secondary">Teams</a>
-			</li>
-			<li class="nav-item">
-				<a  href="./Tickets.html" class="nav-link px-2 text-body-secondary">Tickets</a>
-			</li>
-			<li class="nav-item">
-				<a class= nav-link px-2 text-body-secondary" href="./Login.html">Login</a>
-			</li>
-		</ul>
-		<p class="text-center text-body-secondary">© 2023 Ajax, Inc</p>
-	</footer>
+<!-- This Footer is made with bootstrap changes made here need to be replicated on other pages-->
+
 </html>
