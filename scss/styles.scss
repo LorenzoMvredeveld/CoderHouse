@@ -1,0 +1,374 @@
+/*import for bootstrap */
+@import url(https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css);
+/* import for bootstrap icons */
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css');
+
+body {
+	margin: 0px 5px;
+}
+/* css for index starts here */
+@media (max-width: 600px) {
+	.mainTopSection {
+		display: grid;
+	}
+	.rightNextToEyeCatcher {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.mainEyeCatcher {
+		display: grid;
+		justify-items: center;
+	}
+	.mainEyeCatcher {
+		& > img,
+		p {
+			width: 90%;
+			border-radius: 1%;
+		}
+	}
+}
+@media (min-width: 601px) {
+	.mainTopSection {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		justify-content: center;
+	}
+	.mainEyeCatcher {
+		& > img,
+		p {
+			width: 90%;
+			margin-right: 50px;
+			border-radius: 1%;
+		}
+	}
+}
+
+.rightNextToEyeCatcher {
+	& > div {
+		& > img {
+			width: 90%;
+			border-radius: 1%;
+		}
+	}
+}
+.logo {
+	width: 50px;
+	height: 50px;
+}
+.highlightsSections {
+	margin-top: 50px;
+	padding-top: 25px;
+	display: flex;
+	overflow: auto;
+	// white-space: nowrap;
+	// justify-content: space-around;
+	background-color: #e61610;
+	& > div {
+		& > p {
+			color: #fff;
+		}
+	}
+}
+.highlightsDiv {
+	margin: 0px 25px;
+	& > img {
+		width: 275px;
+		height: 150px;
+	}
+}
+
+.active {
+	background-color: #428bca !important;
+	color: #fff !important;
+	/* added important because of the order css reads the styles and works */
+}
+
+/* this controlls the copyright collor together with the background  */
+.footer,
+.nav-link {
+	background-color: #e61610;
+	color: #fff;
+	text-decoration: none;
+}
+
+/* underconstruction page*/
+.underconstructionDiv {
+	display: grid;
+	grid-column-start: 2;
+	justify-items: center;
+	background-color: #e61610;
+	color: #fff;
+	padding-bottom: 50px;
+}
+.borderUnderconstruction {
+	display: grid;
+	grid-template-columns: 20% 60% 20%;
+}
+
+/* index CSS ends */
+/* navbar CSS starts*/
+/*adding a margin on the bottom so the h1 is not stuck to the header*/
+.NavBar {
+	margin-bottom: 25px;
+}
+@media (max-width: 600px) {
+	.navbar {
+		img {
+			height: 50px;
+			width: 50px;
+			margin: 10px 0px 10px 10px;
+		}
+		& > div {
+			background-color: #e61610;
+
+			& > a {
+				margin-right: 20px;
+			}
+		}
+	}
+
+	.navLinks {
+		text-align: end;
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+	.navbar > div > a,
+	.navLinks > a {
+		text-decoration: none;
+		color: #428bca;
+		background-color: #fff;
+
+		padding: 15px 20px;
+		align-self: center;
+		margin: 5px 10px 5px 10px;
+	}
+}
+
+@media (min-width: 601px) {
+	.navbar {
+		img {
+			height: 50px;
+			width: 50px;
+			margin: 10px 0px 10px 10px;
+		}
+		& > div {
+			background-color: #e61610;
+			display: flex;
+			justify-content: space-between;
+
+			& > a {
+				margin-right: 20px;
+			}
+		}
+	}
+
+	.navLinks {
+		display: flex;
+		text-align: end;
+	}
+	.navbar > div > a,
+	.navLinks > a {
+		text-decoration: none;
+		color: #428bca;
+		background-color: #fff;
+		border-radius: 5%;
+		padding: 15px 20px;
+		align-self: center;
+		margin: 5px 10px 5px 10px;
+	}
+}
+/* navbar CSS ends */
+/* login CSS starts */
+.loginCard {
+	background-color: #e61610;
+}
+.loginLogo {
+	height: 150px;
+	margin: 30px 0px;
+}
+
+/* login CSS stops */
+/* store CSS starts */
+
+@media (min-width: 601px) {
+	.storeMainBannerDiv {
+		// background-image: url('./media/storeMedia/cristmasBGajax.jpeg');
+		background-image: url(../media/storeMedia/cristmasBGajax.jpeg);
+		color: #ffff;
+		padding: 25px;
+		margin-right: 25px;
+	}
+	.StoreRightBannersDiv > div {
+		margin-bottom: 25px;
+		display: grid;
+	}
+	.storeBannerDiv {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		margin: 30px 25px 0px 50px;
+	}
+	.storeProductCard {
+		border: 1px solid #000;
+		display: grid;
+		justify-content: center;
+		justify-items: center;
+		margin: 15px 15px;
+		padding: 20px;
+	}
+	.storeProductCard > img {
+		height: 150px;
+
+		justify-self: center;
+	}
+}
+@media (max-width: 601px) {
+	.storeMainBannerDiv {
+		// background-image: url('./media/storeMedia/cristmasBGajax.jpeg');
+		background-image: url(../media/storeMedia/cristmasBGajax.jpeg);
+		color: #ffff;
+		padding: 25px;
+		margin: 15px;
+		display: grid;
+		align-items: center;
+	}
+	.StoreRightBannersDiv {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		justify-items: center;
+		overflow: scroll;
+	}
+	.StoreRightBannersDiv > div {
+		margin-bottom: 25px;
+		display: grid;
+	}
+
+	.storeProductCard {
+		border: 1px solid #000;
+		width: 150px;
+		margin: 15px 15px;
+		padding: 20px;
+	}
+	.storeProductCard > img {
+		height: 100px;
+
+		justify-self: center;
+	}
+}
+
+.storeMainBannerDiv > button {
+	background-color: #ffff;
+	color: #000;
+	font: bold;
+}
+
+.storeButtonCart {
+	background-color: #e61610;
+	color: #ffff;
+}
+
+.storeProductsOnSale {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	overflow: scroll;
+	scrollbar-width: 2px;
+	margin: 50px 15px;
+}
+
+.storeOnSale {
+	color: #e61610;
+}
+.storeSupperSale {
+	color: #e61610;
+}
+
+/* store CSS stops */
+/* teams CSS starts */
+.teamsHeaderh1 {
+	display: flex;
+	justify-content: center;
+	margin: 25px 0px;
+}
+@media (max-width: 601px) {
+	.teamsAjaxDiv {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+	.teamsAjaxDiv > div {
+		margin: 0px 5px 25px 5px;
+		justify-self: center;
+	}
+	.teamsAjaxDiv > div > h3 {
+		display: flex;
+		justify-content: center;
+	}
+
+	.teamsImg {
+		max-width: 100%;
+		aspect-ratio: 16/9;
+	}
+}
+@media (min-width: 601px) {
+	.teamsAjaxDiv {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.teamsAjaxDiv > div {
+		margin: 0px 0px 25px 20px;
+	}
+	.teamsImg {
+		width: 600px;
+		aspect-ratio: 16/9;
+	}
+}
+/* teams CSS stops */
+/* tickets CSS starts */
+.ticketsH1 {
+	display: flex;
+	justify-content: center;
+	margin: 20px 0px;
+}
+
+@media (min-width: 601px) {
+	.ticketCardDiv {
+		display: grid;
+		grid-template-columns: 1fr 2fr 1fr;
+		border: 1px solid black;
+		margin-bottom: 50px;
+	}
+}
+@media (max-width: 601px) {
+	.ticketCardDiv {
+		display: grid;
+		border: 1px solid black;
+		margin-bottom: 50px;
+
+		& > div {
+			display: grid;
+			justify-items: center;
+		}
+	}
+}
+
+.ticketMiddleDiv > p {
+	margin-bottom: 0px;
+	margin-top: 15px;
+}
+
+.ticketShowDetails {
+	margin-top: 25px;
+}
+.ticketButtonBuy {
+	display: grid;
+	align-content: space-evenly;
+	margin-top: 50px;
+}
+.ticketButtonBuy > button,
+.ticketMiddleDiv > button {
+	background-color: #e61610;
+	color: #fff;
+}
+.ticketsImg {
+	width: 292px;
+	height: 172px;
+}
+/* tickets CSS stops */

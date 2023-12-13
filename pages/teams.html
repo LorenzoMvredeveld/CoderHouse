@@ -3,27 +3,28 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
-		<link rel="stylesheet" href="../styles.css" />
+		<title>Ajax Teams</title>
+		<link rel="stylesheet" href="../CSS/styles.css" />
 	</head>
 	<!-- this is a nav item all chanches made need to be replicated on the other pages. -->
 	
 	<body>
-		<nav class="navBar">
-			<div class="menu" id="menu">
-				<img src="../media/AJAX.svg" alt="Logo Ajax" />
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="#"> <img src="../media/AJAX.svg"  alt="Logo Ajax" /></a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+			<span><i class="bi bi-list"></i></span>	
+			  </button>
+			<div class="collapse navbar-collapse" id="menu">
+				
 				<div class="navLinks">
 					<a href="../index.html">Home</a>
 					<a href="./store.html">Fan Store</a>
 					<a class="active" href="./teams.html">Teams</a>
 					<a href="./tickets.html">Tickets</a>
 				</div>
-				<a class="navLogin" href="./login.html">Login</a>
-				<a class="hamburger" href="#menu">
-					<span class="material-icons noDisplay"> close </span>
-				</a>
+				<a class="navLinks" href="./login.html">Login</a>
 			</div>
-			<span class="material-icons noDisplay"> menu </span>
+			
 		</nav>
 		<h1 class="teamsHeaderh1">The proud squads of AJAX</h1>
 		<div class="teamsAjaxDiv">
@@ -64,7 +65,11 @@
 			</ul>
 			<p class="text-center text-body-secondary">© 2023 Ajax, Inc</p>
 		</footer>
+		<!-- This Footer is made with bootstrap changes made here need to be replicated on other pages-->
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 	</body>
-<!-- This Footer is made with bootstrap changes made here need to be replicated on other pages-->
 
 </html>
