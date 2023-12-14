@@ -174,7 +174,7 @@ body {
 /* store CSS starts */
 @media (min-width: 601px) {
   .storeMainBannerDiv {
-    background-image: url("./media/storeMedia/cristmasBGajax.jpeg");
+    background-image: url("../media/storeMedia/cristmasBGajax.jpeg");
     color: white;
     padding: 25px;
     margin-right: 25px;
@@ -203,7 +203,7 @@ body {
 }
 @media (max-width: 601px) {
   .storeMainBannerDiv {
-    background-image: url("./media/storeMedia/cristmasBGajax.jpeg");
+    background-image: url("../media/storeMedia/cristmasBGajax.jpeg");
     color: white;
     padding: 25px;
     margin: 15px;
