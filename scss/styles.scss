@@ -192,8 +192,7 @@ body {
 
 @media (min-width: 601px) {
 	.storeMainBannerDiv {
-		// background-image: url('./media/storeMedia/cristmasBGajax.jpeg');
-		background-image: url(../media/storeMedia/cristmasBGajax.jpeg);
+		background-image: url('./media/storeMedia/cristmasBGajax.jpeg');
 		color: #ffff;
 		padding: 25px;
 		margin-right: 25px;
@@ -217,14 +216,12 @@ body {
 	}
 	.storeProductCard > img {
 		height: 150px;
-
 		justify-self: center;
 	}
 }
 @media (max-width: 601px) {
 	.storeMainBannerDiv {
-		// background-image: url('./media/storeMedia/cristmasBGajax.jpeg');
-		background-image: url(../media/storeMedia/cristmasBGajax.jpeg);
+		background-image: url('./media/storeMedia/cristmasBGajax.jpeg');
 		color: #ffff;
 		padding: 25px;
 		margin: 15px;
@@ -250,7 +247,6 @@ body {
 	}
 	.storeProductCard > img {
 		height: 100px;
-
 		justify-self: center;
 	}
 }
@@ -326,6 +322,10 @@ body {
 	display: flex;
 	justify-content: center;
 	margin: 20px 0px;
+}
+.aTagRemoveStyle {
+	text-decoration: none;
+	color: #fff;
 }
 
 @media (min-width: 601px) {
